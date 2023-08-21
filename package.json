@@ -1,0 +1,18 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "Description of your project",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=3000 --open=index.html",
+    "build-css": "sass -w --load-path=node_modules src:dist --style=compressed",
+    "watch-css":  "yarn build-css && sass --load-path=node_modules -w src:dist --style=compressed"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.66.1",
+    "vanilla-framework": "^4.2.0"
+  }
+}
+
